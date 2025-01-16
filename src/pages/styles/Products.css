@@ -1,0 +1,64 @@
+.line{
+    animation: lineAnimation 5s linear infinite;;
+}
+@keyframes lineAnimation {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 75%;
+    }
+}
+.buttonFade{
+    animation: buttonAnimation 1s ease-out both;
+    z-index: 1111;
+}
+@keyframes buttonAnimation {
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 30%;
+        opacity: 1;
+    }
+}
+
+.button2Fade{
+    animation: button2Animation 3s ease-out both;
+    z-index: 1111;
+}
+@keyframes button2Animation {
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+
+    100%{
+        top: 75%;
+        opacity: 1;
+    }
+}
+.leftContent{
+    animation: leftContentAnimation 2s ease-out both;
+}
+
+@keyframes leftContentAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.rightContent{
+    animation: rightContentAnimation 4s ease-out both;
+}
+@keyframes rightContentAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
