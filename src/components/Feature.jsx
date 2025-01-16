@@ -31,7 +31,7 @@ const Feature = () => {
               />
               +
             </div>
-            <div class="text-sm text-lg text-white font-semibold mt-2">
+            <div class=" text-lg text-white font-semibold mt-2">
               Cutting-Edge Products
             </div>
           </SpotlightCard>
