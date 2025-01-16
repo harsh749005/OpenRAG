@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import glow from "../assets/glow.avif";
 import ShinyText from "../components/reactBits/ShinyText";
 import Logo from "../assets/svg/logo";
@@ -8,8 +8,8 @@ const Navbar = () => {
  
   return (
     <>
-      <nav className="m-5 fixed w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="sm:m-2 m-5 fixed w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo and brand */}
             <div className="flex items-center">
@@ -56,7 +56,7 @@ const Navbar = () => {
             {/* <button className="  px-4 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                       Sign In
                     </button> #1F1E1E*/} 
-            <Link to='/OpenRAG/get-in-touch' className="w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
+            <Link to='/OpenRAG/get-in-touch' className="hidden md:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
 
             <ShinyText
               text="GET IN TOUCH"
@@ -67,6 +67,9 @@ const Navbar = () => {
               </Link>
 
             {/* Mobile menu button */}
+            <div className="w-4 h-4 sm:hidden  ">
+              <GiHamburgerMenu className="w-full h-full text-white"/>
+            </div>
             {/* <div className="md:hidden">
                     <button
                       onClick={() => setIsMenuOpen(!isMenuOpen)}
