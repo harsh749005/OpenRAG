@@ -8,9 +8,9 @@ const Navbar = () => {
  
   return (
     <>
-      <nav className="sm:m-2 m-5 fixed w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+      <nav className="sm:m-3 md:m-5 fixed w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
+        <div className="max-w-7xl mx-auto  sm:px-4 lg:px-8">
+          <div className="flex justify-between items-center h-16 px-6">
             {/* Logo and brand */}
             <div className="flex items-center">
               {/* <Brain className="h-8 w-8 text-white" /> */}
