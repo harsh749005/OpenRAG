@@ -8,14 +8,19 @@ import FAQs from "./pages/FAQs";
 import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
 import ReadBlogs from "./pages/ReadBlogs";
+import HamburgerMenu from "./components/HamburgerMenu";
 function App() {
-  const [count, setCount] = useState(0)
- 
+  const [isMenuOpen,setMenuOpen] = useState(false);
+  const [isAuth,setisAuth] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   return (
     <div className='w-full h-full bg-black'>
          
         {/* Navbar and other sections */}
-        <Navbar />
+        <Navbar toggleMenu={toggleMenu}/>
+        {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
         <Routes>
           {/* Home Route */}
           <Route path="/OpenRAG"element={<Home/>}/>

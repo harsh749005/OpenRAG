@@ -74,7 +74,7 @@ const Work = () => {
   }, [amountToScroll]); // Re-run this effect when amountToScroll changes
 
   return (
-    <div className="main w-[100%] h-[750vh] bg-black relative overflow-hidden">
+    <div className="main hidden md:block w-[100%] h-[750vh] bg-black relative overflow-hidden">
       <section className="wrapper-404 absolute top-0 w-[400vw] h-[100vh] ">
         <h1 className="cursor-pointer text-[48vw] text-white font-bold mb-10 absolute bottom-[-20%]">
           Our Work

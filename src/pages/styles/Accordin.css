@@ -1,0 +1,56 @@
+.main-div{
+    height: 100vh;
+    background-color: rgb(35, 35, 35);
+}
+.accordin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 620px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    border-left: 5px solid #ffc505;
+    border-radius: 5px;
+    padding: 10px 20px;
+    max-width: 600px;
+  display: flex;
+  flex-direction: column;
+    cursor: pointer;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+}
+.answer{
+    padding-top: 10px;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+    text-align: justify;
+
+    overflow: hidden;
+    
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+.answer:target{
+max-height: 150px;}
+.innerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin-left: 20px;
+    user-select: none;
+    font-size: 20px;
+    color: black;
+}

@@ -25,23 +25,23 @@ const Section = () => {
           markers: true, // Debugging markers to show start and end points
         },
       });
-      gsap.to(".card", {
-        scale: 0.7,
-        opacity: 0,
-        scrollTrigger: {
-          trigger: ".card", // Target the .box div for scroll
-          start: "top 15%", // Start when the top of the box hits 85% of the viewport
-          end: "bottom 15%", // End when the bottom of the box hits 15% of the viewport
-          scrub: 1, // Smooth animation linked to scroll
-          markers: true, // Debugging markers to show start and end points
-        },
-      });
+      // gsap.to(".card", {
+      //   scale: 0.7,
+      //   opacity: 0,
+      //   scrollTrigger: {
+      //     trigger: ".card", // Target the .box div for scroll
+      //     start: "top 15%", // Start when the top of the box hits 85% of the viewport
+      //     end: "bottom 15%", // End when the bottom of the box hits 15% of the viewport
+      //     scrub: 1, // Smooth animation linked to scroll
+      //     markers: true, // Debugging markers to show start and end points
+      //   },
+      // });
 
     }
   }, []);
 
   return (
-    <div className="container w-[100%] h-[200vh] bg-black relative ">
+    <div className="container w-[100%] h-[300vh] relative ">
       <Squares
         className="container"
         speed={0.5}
@@ -50,22 +50,22 @@ const Section = () => {
         borderColor="#3A3B3B"
         hoverFillColor="#222"
       />
-      <div className="  w-full h-[100vh] absolute top-[0px] pt-[300px]">
+      <div className="  w-full h-[100vh] absolute top-[0px] pt-[300px] mb-5 md:mb-0">
         <div className=" box   content w-full text-center flex flex-col gap-5 ">
-          <h1 className=" text-5xl md:text-8xl font-bold text-white mb-6">
+          <h1 className=" text-3xl md:text-8xl font-bold text-white mb-6">
             <span className=" block text-[#AD49BD]"> Revolutionizing</span>
             the Generative AI 
           </h1>
-          <p className=" text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+          <p className="sm:mb-- sm:text-[12px] md:text-xl text-gray-400 max-w-2xl mx-auto md:mb-8">
             OpenRAG is at the forefront of revolutionizing the way solutions
             have been getting developed, utilizing cutting-edge technology to
             drive actionable results and empower your life.
           </p>
         </div>
         {/* Second box */}
-    <div className="card  flex items-center justify-evenly mt-10">
+    <>
       <Cards/>
-    </div>
+    </>
      
       </div>
     </div>

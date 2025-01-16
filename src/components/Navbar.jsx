@@ -4,13 +4,14 @@ import glow from "../assets/glow.avif";
 import ShinyText from "../components/reactBits/ShinyText";
 import Logo from "../assets/svg/logo";
 import { Link } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({toggleMenu}) => {
  
   return (
     <>
-      <nav className="sm:m-3 md:m-5 fixed w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
-        <div className="max-w-7xl mx-auto  sm:px-4 lg:px-8">
-          <div className="flex justify-between items-center h-16 px-6">
+    {/*  bg-white/5 backdrop-blur-md border-b border-white/10*/}
+      <nav className="sm:m-3 md:m-5 fixed w-[100vw] bg-pink-500 border-b border-white/10 z-50">
+        <div className="w-[90%] mx-auto  sm:px-4 lg:px-8">
+          <div className="flex justify-between items-center h-16 sm:px-1 md:px-8">
             {/* Logo and brand */}
             <div className="flex items-center">
               {/* <Brain className="h-8 w-8 text-white" /> */}
@@ -68,7 +69,7 @@ const Navbar = () => {
 
             {/* Mobile menu button */}
             <div className="w-4 h-4 sm:hidden  ">
-              <GiHamburgerMenu className="w-full h-full text-white"/>
+              <GiHamburgerMenu onClick={toggleMenu} className="w-full h-full text-white"/>
             </div>
             {/* <div className="md:hidden">
                     <button

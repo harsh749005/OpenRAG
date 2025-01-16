@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="w-[100%] h-max bg-black relative">
+    <div className="w-[100%] h-max pb-5 bg-black relative">
       <HeroSection />
       <Feature />
       <Section />
