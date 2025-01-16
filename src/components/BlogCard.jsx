@@ -27,7 +27,7 @@ const BlogCard = () => {
               <IoMdShare className="text-gray-300 cursor-pointer bg-transparent"/>
               
             </div>
-            <Link to='/readblogs' className="flex flex-col gap-5 bg-transparent">
+            <Link to='/OpenRAG/readblogs' className="flex flex-col gap-5 bg-transparent">
               <h1 className="text-white font-medium font-sans text-xl bg-transparent">
                 Alert‼️ ANNOUNCEMENT coming your way&nbsp;💥💥
               </h1>
