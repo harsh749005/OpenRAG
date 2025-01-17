@@ -41,7 +41,7 @@ const Section = () => {
   }, []);
 
   return (
-    <div className="container w-[100%] h-[300vh] md:h-[180vh] relative ">
+    <div className="container w-[100%] h-[320vh] md:h-[180vh]  relative ">
       <Squares
         className="container"
         speed={0.5}
@@ -50,13 +50,13 @@ const Section = () => {
         borderColor="#3A3B3B"
         hoverFillColor="#222"
       />
-      <div className="  w-full h-[100vh] absolute top-[0px] pt-[300px] mb-5 md:mb-0">
-        <div className=" box   content w-full text-center flex flex-col gap-5 ">
-          <h1 className=" text-3xl md:text-8xl font-bold text-white mb-6">
-            <span className=" block text-[#AD49BD]"> Revolutionizing</span>
+      <div className="  w-full h-[100vh]  absolute top-[0px] pt-[300px]  md:mb-0">
+        <div className=" box content w-full text-center flex flex-col gap-5 mb-28">
+          <h1 className=" text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">
+            <span className=" block text-[#AD49BD] "> Revolutionizing</span>
             the Generative AI 
           </h1>
-          <p className="sm:mb-- sm:text-[12px] md:text-xl text-gray-400 max-w-2xl mx-auto md:mb-8">
+          <p className="sm:text-[12px] md:text-xl font-sans text-gray-400 max-w-2xl mx-auto md:mb-8">
             OpenRAG is at the forefront of revolutionizing the way solutions
             have been getting developed, utilizing cutting-edge technology to
             drive actionable results and empower your life.

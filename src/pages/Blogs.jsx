@@ -27,7 +27,9 @@ const Blogs = () => {
             falloff="linear"
           />
         </div>
-        <div className=" w-max h-max   flex items-center gap-5 flex-wrap">
+        <div className=" w-max h-max flex flex-col items-center gap-5 md:w-full md:flex-row md:flex md:items-center md:gap-5 md:flex-wrap">
+       <BlogCard/>
+       <BlogCard/>
        <BlogCard/>
         </div>
       </div>

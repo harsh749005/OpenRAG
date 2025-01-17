@@ -74,8 +74,8 @@ const Work = () => {
   }, [amountToScroll]); // Re-run this effect when amountToScroll changes
 
   return (
-    <div className="main hidden md:block w-[100%] h-[750vh] bg-black relative overflow-hidden">
-      <section className="wrapper-404 absolute top-0 w-[400vw] h-[100vh] ">
+    <div className="main hidden md:block  w-[100%] md:h-[600vh] lg:h-[750vh] bg-black relative overflow-hidden">
+      <section className="wrapper-404 absolute  lg:top-0 w-[400vw] h-[100vh] ">
         <h1 className="cursor-pointer text-[48vw] text-white font-bold mb-10 absolute bottom-[-20%]">
           Our Work
         </h1>
@@ -115,17 +115,17 @@ const Work = () => {
           />
         </div>
       </section>
-      <section className="outer absolute w-[100%] h-[100vh] top-[650vh]">
+      <section className="outer absolute w-[100%] h-[100vh] md:top-[450vh] lg:top-[650vh]">
         <div className="w-[80%] h-max m-auto flex flex-col items-center gap-2">
           <GradientText
             colors={["#AD49BD", "#C86BCF", "#8C2C99", "#F06292", "#6759FF"]}
             animationSpeed={3}
             showBorder={false}
-            className="text-[5vw] text-white font-extrabold p-2 text-center"
+            className="text-3xl md:text-6xl lg:text-8xl text-white font-extrabold p-2 text-center"
           >
             Unlock the Potential of Your Data
           </GradientText>
-          <p className="w-[65%] text-2xl text-gray-400 mt-8 p-2 text-center">
+          <p className="w-[65%] sm:text-[12px] md:text-xl font-sans text-gray-400 mt-8 p-2 text-center">
             Discover how OpenRAG can accelerate your business growth with
             advanced GenAI solutions tailored to your specific needs.
           </p>

@@ -12,7 +12,7 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="card flex flex-col gap-6 items-center  justify-center h-max w-full pt-4 md:pt-0 md:flex md:flex-row md:items-center md:justify-evenly md:mt-10">
+    <div className="card flex flex-col gap-6 items-center  justify-center h-max w-full pt-4   md:flex-wrap md:pt-0 md:flex md:flex-row md:items-center md:justify-evenly md:mt-10">
       {data.map((item, index) => ( // item comes first, then index in map callback
         <SpotlightCard
           key={index}
@@ -34,7 +34,7 @@ const Cards = () => {
           <p className="text-gray-300 mt-8 px-2 text-md">
             {item.description}
           </p>
-          <button>Learn more</button>
+          
         </SpotlightCard>
       ))}
     </div>

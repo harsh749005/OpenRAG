@@ -20,10 +20,10 @@ const ReadBlogs = () => {
   };
   return (
     <div className="w-full  bg-black pt-36">
-      <div className="w-[80%] h-full bg-black pb-12 m-auto flex flex-col gap-2">
+      <div className="w-[90%] h-full bg-black pb-12 m-auto flex flex-col gap-2">
         <div className="w-full h-full">
           <SpotlightCard
-            className="w-full h-full rounded-md"
+            className="w-full h-full rounded-md p-[-10px]"
             spotlightColor="rgba(255, 255, 255, 0.25)"
           >
             <div className="flex flex-col gap-5">
@@ -35,10 +35,10 @@ const ReadBlogs = () => {
                 <IoMdShare className="text-gray-300 cursor-pointer" />
               </div>
               <div className="flex flex-col gap-5">
-                <h1 className="text-white font-medium font-sans text-4xl">
+                <h1 className="text-white font-medium font-sans text-lg md:text-4xl">
                   Alert‼️ ANNOUNCEMENT coming your way&nbsp;💥💥
                 </h1>
-                <p className=" w-full h-full font-sans text-lg text-gray-300 ">
+                <p className=" w-full h-full font-sans text-sm md:text-lg text-gray-300 ">
                   Hey everyone!! This blog is going to be a quite different as
                   in this blog I am going to tell you about Nisharg
                   Nargund(Myself) and my mate{" "}<br/>

@@ -53,7 +53,7 @@ const Events = () => {
             onClick={() => handleToggle(1)}
             className=" absolute z-10 w-full  top-0 bg-black flex items-center justify-between"
           >
-            <h1 className="text-lg text-white md:text-4xl">
+            <h1 className="text-lg  md:text-2xl lg:text-4xl text-white">
               1. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
             </h1>
             <div
@@ -143,7 +143,7 @@ const Events = () => {
             onClick={() => handleToggle(2)}
             className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
           >
-            <h1 className="text-lg text-white md:text-4xl">2. Intellectra </h1>
+            <h1 className="text-lg text-white md:text-2xl lg:text-4xl">2. Intellectra </h1>
             <div
               style={{ rotate: selectedId === 2 ? "45deg" : "0deg" }}
               className="transition-all duration-500 ease-linear "
@@ -222,7 +222,7 @@ const Events = () => {
             onClick={() => handleToggle(3)}
             className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
           >
-            <h1 className="text-lg text-white md:text-4xl">
+            <h1 className="text-lg text-white md:text-2xl lg:text-4xl">
               3. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
             </h1>
             <div

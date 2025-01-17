@@ -42,7 +42,7 @@ const FAQs = () => {
             </div>
             {/* 1 */}
             <div
-              className={`cursor-pointer w-full h-[68px] md:h-12  flex flex-col items-center gap-2 relative  overflow-${
+              className={`cursor-pointer w-full h-[68px] md:h-16  flex flex-col items-center gap-2 relative  overflow-${
                 selectedId === 1 ? "auto" : "hidden"
               } px-4`}
             >
@@ -50,7 +50,7 @@ const FAQs = () => {
                 onClick={() => handleToggle(1)}
                 className="absolute z-10 w-full top-0 bg-black flex items-center justify-between"
               >
-                <h1 className=" text-lg md:text-4xl text-white ">
+                <h1 className="text-lg  md:text-2xl lg:text-4xl text-white">
                   1. What does OpenRAG do?{" "}
                 </h1>
                 <div
@@ -87,7 +87,7 @@ const FAQs = () => {
             {/* 2 */}
             <div
               style={{ top: `${selectedId === 1 ? BottomPosition + "px" : "0px"}` }}
-              className={`cursor-pointer w-full h-24  md:h-12 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+              className={`cursor-pointer w-full h-24  md:h-16 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
                 selectedId === 2 ? "auto" : "hidden"
               } px-4`}
             >
@@ -95,7 +95,7 @@ const FAQs = () => {
                 onClick={() => handleToggle(2)}
                 className="z-20 absolute w-full top-0  bg-black  flex items-center justify-between"
               >
-                <h1 className=" text-lg md:text-4xl  text-white ">2. What are the generativeAI events conducted by OpenRAG? </h1>
+                <h1 className="text-lg  md:text-2xl lg:text-4xl text-white">2. What are the generativeAI events conducted by OpenRAG? </h1>
                 <div
                   style={{ rotate: selectedId === 2 ? "45deg" : "0deg" }}
                   className="transition-all duration-500 ease-linear "
@@ -131,7 +131,7 @@ const FAQs = () => {
                     ? "0px"
                     : BottomPosition + "px",
               }}
-              className={`cursor-pointer w-full h-[68px] md:h-12  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+              className={`cursor-pointer w-full h-[68px] md:h-16  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
                 selectedId === 3 ? "auto" : "hidden"
               } px-4`}
             >
@@ -139,7 +139,7 @@ const FAQs = () => {
                 onClick={() => handleToggle(3)}
                 className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
               >
-                <h1 className=" text-lg md:text-4xl text-white">
+                <h1 className="text-lg  md:text-2xl lg:text-4xl text-white">
                   3. How can you join OpenRAG?{" "}
                 </h1>
                 <div
