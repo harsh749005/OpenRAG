@@ -9,6 +9,9 @@
     font-optical-sizing: auto;
     scroll-behavior: smooth;
 }
+#root{
+  background-color: black;
+}
 /* Hide the scrollbar */
 html,body {
     scrollbar-width: none; /* For Firefox */

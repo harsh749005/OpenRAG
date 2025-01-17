@@ -22,8 +22,8 @@ const Events = () => {
     console.log(selectedId);
   }, [selectedId]);
   return (
-    <div className="w-full h-[200vh] bg-black pt-36">
-      <div className="w-[80%] h-full bg-black m-auto flex flex-col gap-2">
+    <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
+      <div className="w-[90%] h-full pl-2 pr-2 bg-black m-auto flex flex-col gap-2">
         {/* heading */}
         <div
           ref={containerRef}
@@ -33,7 +33,7 @@ const Events = () => {
           <VariableProximity
             label={"Events"}
             className={
-              "variable-proximity-demo text-white text-[8vw] cursor-pointer"
+              "variable-proximity-demo text-white text-[12vw] md:text-[8vw] cursor-pointer"
             }
             fromFontVariationSettings="'wght' 500, 'opsz' 9"
             toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -44,15 +44,16 @@ const Events = () => {
         </div>
         {/* 1 */}
         <div
-          className={`cursor-pointer w-full h-12   flex flex-col items-center gap-2 relative  overflow-${
+        
+          className={`cursor-pointer w-full h-[68px] md:h-12  flex flex-col items-center gap-2 relative  overflow-${
             selectedId === 1 ? "auto" : "hidden"
           } px-4`}
         >
           <div
             onClick={() => handleToggle(1)}
-            className="absolute z-10 w-full top-0 bg-black flex items-center justify-between"
+            className=" absolute z-10 w-full  top-0 bg-black flex items-center justify-between"
           >
-            <h1 className=" text-white text-4xl">
+            <h1 className="text-lg text-white md:text-4xl">
               1. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
             </h1>
             <div
@@ -60,9 +61,9 @@ const Events = () => {
               className="transition-all duration-500 ease-linear "
             >
               {selectedId === 1 ? (
-                <IoMdAdd className=" text-white text-4xl " />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl " />
               ) : (
-                <IoMdAdd className=" text-white text-4xl" />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl" />
               )}
             </div>
           </div>
@@ -134,7 +135,7 @@ const Events = () => {
         {/* 2 */}
         <div
           style={{ top: `${selectedId === 1 ? BottomPosition + "px" : "0px"}` }}
-          className={`cursor-pointer w-full h-12 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+          className={`cursor-pointer w-full h-[68px] md:h-12 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
             selectedId === 2 ? "auto" : "hidden"
           } px-4`}
         >
@@ -142,23 +143,21 @@ const Events = () => {
             onClick={() => handleToggle(2)}
             className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
           >
-            <h1 className="text-white text-4xl">2. Intellectra </h1>
+            <h1 className="text-lg text-white md:text-4xl">2. Intellectra </h1>
             <div
               style={{ rotate: selectedId === 2 ? "45deg" : "0deg" }}
               className="transition-all duration-500 ease-linear "
             >
               {selectedId === 2 ? (
-                <IoMdAdd className=" text-white text-4xl " />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl " />
               ) : (
-                <IoMdAdd className=" text-white text-4xl" />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl" />
               )}
             </div>
           </div>
           <div
-            style={{ top: selectedId === 2 ? "80px" : "10px" }}
-            className={` w-full absolute transition-all duration-700  ease-linear  text-white opacity-${
-              selectedId === 2 ? "100" : "20"
-            }`}
+            style={{ top: selectedId === 2 ? "80px" : "10px",opacity:selectedId === 2 ? "100" : "0" }}
+            className='w-full absolute transition-all duration-700  ease-linear  text-white '
           >
             <p className="text-xl text-gray-100 ">
               Events Date: 3rd July 2024 - 7th July 2024
@@ -215,7 +214,7 @@ const Events = () => {
                 ? "0px"
                 : BottomPosition + "px",
           }}
-          className={`cursor-pointer w-full h-12 ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+          className={`cursor-pointer w-full h-[68px] md:h-12  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
             selectedId === 3 ? "auto" : "hidden"
           } px-4`}
         >
@@ -223,7 +222,7 @@ const Events = () => {
             onClick={() => handleToggle(3)}
             className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
           >
-            <h1 className="text-white text-4xl">
+            <h1 className="text-lg text-white md:text-4xl">
               3. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
             </h1>
             <div
@@ -231,17 +230,15 @@ const Events = () => {
               className="transition-all duration-500 ease-linear "
             >
               {selectedId === 3 ? (
-                <IoMdAdd className=" text-white text-4xl " />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl  " />
               ) : (
-                <IoMdAdd className=" text-white text-4xl" />
+                <IoMdAdd className=" text-white text-2xl md:text-4xl " />
               )}
             </div>
           </div>
           <div
-            style={{ top: selectedId === 3 ? "80px" : "10px" }}
-            className={` w-full absolute transition-all duration-700  ease-linear text-white opacity-${
-              selectedId === 3 ? "100" : "20"
-            }`}
+            style={{ top: selectedId === 3 ? "80px" : "10px",opacity:selectedId === 3? 100 : 0 }}
+            className=' w-full absolute transition-all duration-700  ease-linear text-white '
           >
             <p className="text-xl text-gray-100 ">
               Events Date: 3rd July 2024 - 7th July 2024

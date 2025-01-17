@@ -1,5 +1,5 @@
 
-  .marquee {
+  .marquee{
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
@@ -15,3 +15,7 @@
       transform: translateX(100%);
     }
   }
+/* styles.css */
+.no-scroll {
+  overflow: hidden;
+}

@@ -5,7 +5,9 @@ import ShinyText from "../components/reactBits/ShinyText";
 import Logo from "../assets/svg/logo";
 import { Link } from "react-router-dom";
 const Navbar = ({toggleMenu}) => {
- 
+  const scrollToTop = () => {
+    window.reload();
+  };
   return (
     <>
     {/*  bg-white/5 backdrop-blur-md border-b border-white/10*/}
@@ -24,30 +26,35 @@ const Navbar = ({toggleMenu}) => {
             {/* Desktop navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link
+              onClick={scrollToTop}
                 to="/OpenRAG"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Home
               </Link>
               <Link
+              onClick={scrollToTop}
                 to="/OpenRAG/events"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Events
               </Link>
               <Link
+              onClick={scrollToTop}
                 to="/OpenRAG/blogs"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Blog
               </Link>
               <Link
+              onClick={scrollToTop}
                 to="/OpenRAG/products"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Products
               </Link>
               <Link
+              onClick={scrollToTop}
                 to="/OpenRAG/FAQ"
                 className="text-gray-300 hover:text-white transition-colors"
               >

@@ -20,8 +20,8 @@ const FAQs = () => {
         console.log(selectedId);
       }, [selectedId]);
   return (
-    <div className="w-full h-[200vh] bg-black pt-36">
-          <div className="w-[80%] h-full bg-black m-auto flex flex-col gap-2">
+    <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
+          <div className="w-[90%] pl-2 pr-2 h-full bg-black m-auto flex flex-col gap-2">
             {/* heading */}
             <div
               ref={containerRef}
@@ -31,7 +31,7 @@ const FAQs = () => {
               <VariableProximity
                 label={"FAQs"}
                 className={
-                  "variable-proximity-demo text-white text-[8vw] cursor-pointer"
+                  "variable-proximity-demo text-white text-[12vw] md:text-[8vw] cursor-pointer"
                 }
                 fromFontVariationSettings="'wght' 500, 'opsz' 9"
                 toFontVariationSettings="'wght' 1000, 'opsz' 40"
@@ -42,7 +42,7 @@ const FAQs = () => {
             </div>
             {/* 1 */}
             <div
-              className={`cursor-pointer w-full h-12   flex flex-col items-center gap-2 relative  overflow-${
+              className={`cursor-pointer w-full h-[68px] md:h-12  flex flex-col items-center gap-2 relative  overflow-${
                 selectedId === 1 ? "auto" : "hidden"
               } px-4`}
             >
@@ -50,7 +50,7 @@ const FAQs = () => {
                 onClick={() => handleToggle(1)}
                 className="absolute z-10 w-full top-0 bg-black flex items-center justify-between"
               >
-                <h1 className=" text-white text-4xl">
+                <h1 className=" text-lg md:text-4xl text-white ">
                   1. What does OpenRAG do?{" "}
                 </h1>
                 <div
@@ -58,9 +58,9 @@ const FAQs = () => {
                   className="transition-all duration-500 ease-linear "
                 >
                   {selectedId === 1 ? (
-                    <IoMdAdd className=" text-white text-4xl " />
+                    <IoMdAdd className=" text-white text-2xl md:text-4xl " />
                   ) : (
-                    <IoMdAdd className=" text-white text-4xl" />
+                    <IoMdAdd className=" text-white text-2xl md:text-4xl" />
                   )}
                 </div>
               </div>
@@ -79,15 +79,7 @@ const FAQs = () => {
                   <li className="">
                   OpenRAG is dedicated to democratize generativeAI. So, we develop RAGbots, generativeAI agents and tools that are customizable, scalable and capable of solving the problems of individuals. Additionally, OpenRAG is dedicated to advance generative community by conducting and organizing sessions, workshops and hackathons.  
                   </li>
-                  <li className="">
-                  OpenRAG is dedicated to democratize generativeAI. So, we develop RAGbots, generativeAI agents and tools that are customizable, scalable and capable of solving the problems of individuals. Additionally, OpenRAG is dedicated to advance generative community by conducting and organizing sessions, workshops and hackathons.  
-                  </li>
-                  <li className="">
-                  OpenRAG is dedicated to democratize generativeAI. So, we develop RAGbots, generativeAI agents and tools that are customizable, scalable and capable of solving the problems of individuals. Additionally, OpenRAG is dedicated to advance generative community by conducting and organizing sessions, workshops and hackathons.  
-                  </li>
-                  <li className="">
-                  OpenRAG is dedicated to democratize generativeAI. So, we develop RAGbots, generativeAI agents and tools that are customizable, scalable and capable of solving the problems of individuals. Additionally, OpenRAG is dedicated to advance generative community by conducting and organizing sessions, workshops and hackathons.  
-                  </li>
+
               
                 </ul>
               </div>
@@ -95,38 +87,36 @@ const FAQs = () => {
             {/* 2 */}
             <div
               style={{ top: `${selectedId === 1 ? BottomPosition + "px" : "0px"}` }}
-              className={`cursor-pointer w-full h-12 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+              className={`cursor-pointer w-full h-24  md:h-12 ease-linear flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
                 selectedId === 2 ? "auto" : "hidden"
               } px-4`}
             >
               <div
                 onClick={() => handleToggle(2)}
-                className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
+                className="z-20 absolute w-full top-0  bg-black  flex items-center justify-between"
               >
-                <h1 className="text-white text-4xl">2. What are the generativeAI events conducted by OpenRAG? </h1>
+                <h1 className=" text-lg md:text-4xl  text-white ">2. What are the generativeAI events conducted by OpenRAG? </h1>
                 <div
                   style={{ rotate: selectedId === 2 ? "45deg" : "0deg" }}
                   className="transition-all duration-500 ease-linear "
                 >
                   {selectedId === 2 ? (
-                    <IoMdAdd className=" text-white text-4xl " />
+                    <IoMdAdd className=" text-white  text-2xl md:text-4xl" />
                   ) : (
-                    <IoMdAdd className=" text-white text-4xl" />
+                    <IoMdAdd className=" text-white  text-2xl md:text-4xl" />
                   )}
                 </div>
               </div>
               <div
-                style={{ top: selectedId === 2 ? "80px" : "10px" }}
-                className={` w-full absolute transition-all duration-700  ease-linear  text-white opacity-${
-                  selectedId === 2 ? "100" : "20"
-                }`}
+                style={{ top: selectedId === 2 ? "80px" : "10px",opacity: selectedId === 2 ? "100" : "0" }}
+                className='w-full absolute transition-all duration-700  ease-linear  text-white '
               >
                 <p className="text-xl text-gray-100 ">
                   {""}
                 </p>
-                <ul className="list-disc flex flex-col gap-2 mt-2">
+                <ul className="list-disc flex flex-col gap-2  md:mt-2">
                  
-                  <li className="">
+                  <li className="mt-8 md:mt-0">
                   OpenRAG has conducted two sessions and one hackathons i.e. two individually and hackathon in collabration with another startup Axamine ai nationwide.  We got bumper responses from all of three events and the participation was above the limit.{" "}
                     
                   </li>
@@ -141,7 +131,7 @@ const FAQs = () => {
                     ? "0px"
                     : BottomPosition + "px",
               }}
-              className={`cursor-pointer w-full h-12 ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+              className={`cursor-pointer w-full h-[68px] md:h-12  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
                 selectedId === 3 ? "auto" : "hidden"
               } px-4`}
             >
@@ -149,7 +139,7 @@ const FAQs = () => {
                 onClick={() => handleToggle(3)}
                 className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
               >
-                <h1 className="text-white text-4xl">
+                <h1 className=" text-lg md:text-4xl text-white">
                   3. How can you join OpenRAG?{" "}
                 </h1>
                 <div
@@ -157,17 +147,15 @@ const FAQs = () => {
                   className="transition-all duration-500 ease-linear "
                 >
                   {selectedId === 3 ? (
-                    <IoMdAdd className=" text-white text-4xl " />
+                    <IoMdAdd className="text-white  text-2xl md:text-4xl" />
                   ) : (
-                    <IoMdAdd className=" text-white text-4xl" />
+                    <IoMdAdd className=" text-white  text-2xl md:text-4xl" />
                   )}
                 </div>
               </div>
               <div
-                style={{ top: selectedId === 3 ? "80px" : "10px" }}
-                className={` w-full absolute transition-all duration-700  ease-linear text-white opacity-${
-                  selectedId === 3 ? "100" : "20"
-                }`}
+                style={{ top: selectedId === 3 ? "80px" : "10px",opacity: selectedId === 3 ? "100" : "0"  }}
+                className='w-full absolute transition-all duration-700  ease-linear text-white '
               >
                 <p className="text-xl text-gray-100 ">
                   {""}

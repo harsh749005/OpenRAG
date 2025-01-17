@@ -1,12 +1,12 @@
 .line{
-    animation: lineAnimation 5s linear infinite;;
+    animation: lineAnimation 5s linear both;
 }
 @keyframes lineAnimation {
     0%{
         height: 0px;
     }
     100%{
-        height: 75%;
+        height: 120%;
     }
 }
 .buttonFade{
@@ -35,7 +35,7 @@
     }
 
     100%{
-        top: 75%;
+        top: 120%;
         opacity: 1;
     }
 }

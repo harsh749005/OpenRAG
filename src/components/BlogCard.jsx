@@ -15,7 +15,7 @@ const BlogCard = () => {
   return (
     <>
         <SpotlightCard
-          className="w-80 h-96 cursor-pointer rounded-md"
+          className="w-[90vw] md:w-80 h-96 cursor-pointer rounded-md"
           spotlightColor="rgba(255, 255, 255, 0.25)"
         >
           <div className="flex flex-col gap-5 bg-transparent">

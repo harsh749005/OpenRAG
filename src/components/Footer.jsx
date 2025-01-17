@@ -37,7 +37,9 @@ const Footer = () => {
           GET IN TOUCH
         </Link>
       </div>
-      <div className="overflow-hidden marquee text-white text-[20vw] font-bold pb-5 md:pb-0">OPENRAG</div>
+      <div className="overflow-hidden  text-white text-[20vw] font-bold pb-5 md:pb-0">
+        <h1 className="marquee">OPENRAG</h1>
+      </div>
     </div>
   );
 };
