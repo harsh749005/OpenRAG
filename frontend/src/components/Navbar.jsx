@@ -24,7 +24,7 @@ const Navbar = ({toggleMenu}) => {
             </div>
 
             {/* Desktop navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               <Link
               onClick={scrollToTop}
                 to="/OpenRAG"
@@ -60,11 +60,16 @@ const Navbar = ({toggleMenu}) => {
               >
                 FAQs
               </Link>
+              <Link
+              onClick={scrollToTop}
+                to="/OpenRAG/AboutUs"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                AboutUs
+              </Link>
             </div>
-            {/* <button className="  px-4 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                      Sign In
-                    </button> #1F1E1E*/} 
-            <Link to='/OpenRAG/get-in-touch' className="hidden md:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
+          
+            <Link to='/OpenRAG/get-in-touch' className="hidden lg:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
 
             <ShinyText
               text="GET IN TOUCH"
@@ -75,33 +80,12 @@ const Navbar = ({toggleMenu}) => {
               </Link>
 
             {/* Mobile menu button */}
-            <div className="w-4 h-4 sm:hidden  ">
+            <div className="w-4 h-4 lg:hidden  ">
               <GiHamburgerMenu onClick={toggleMenu} className="w-full h-full text-white"/>
             </div>
-            {/* <div className="md:hidden">
-                    <button
-                      onClick={() => setIsMenuOpen(!isMenuOpen)}
-                      className="text-white hover:text-white/80 transition-colors"
-                    >
-                      {isMenuOpen ? <X className="h-6 w-6" /> : "ji"}
-                    </button>
-                  </div> */}
+     
           </div>
 
-          {/* Mobile navigation */}
-          {/* {isMenuOpen && (
-                  <div className="md:hidden bg-white/10 backdrop-blur-lg rounded-lg mt-2 border border-white/10">
-                    <div className="px-2 pt-2 pb-3 space-y-1">
-                      <a href="#" className="block px-3 py-2 text-white/90 hover:text-white transition-colors">Home</a>
-                      <a href="#" className="block px-3 py-2 text-white/90 hover:text-white transition-colors">Events</a>
-                      <a href="#" className="block px-3 py-2 text-white/90 hover:text-white transition-colors">Blog</a>
-                      <a href="#" className="block px-3 py-2 text-white/90 hover:text-white transition-colors">Products</a>
-                      <button className="w-full mt-2 px-4 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                        Sign In
-                      </button>
-                    </div>
-                  </div>
-                )} */}
         </div>
       </nav>
     </>

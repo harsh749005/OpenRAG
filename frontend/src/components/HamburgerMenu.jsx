@@ -1,14 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './styles/HamburgerMenu.css'
-
+import { IoCloseOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom'
 const HamburgerMenu = ({closeMenu}) => {
-  
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    // Function to track scroll position
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY); // Get current scroll position
+    };
+    // Attach the event listener to track scroll position
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      // Clean up event listener
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
   return (
-    <div className='z-50 absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] bg-black  w-72  p-5 md:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-gray-700 '>
+    <div style={{
+      top: `${scrollPosition + 320}px`, // Adjust positioning based on scroll position
+    }} className='z-50 absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 bg-black  w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-gray-700 '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
-        <img onClick={closeMenu} src="" alt="" className='cursor-pointer'/>
+    <IoCloseOutline onClick={closeMenu} className='text-2xl' />
+        <img  src="" alt="" className='cursor-pointer'/>
     </div>
       <ul className="w-full flex flex-col gap-5 justify-between items-center lg:text-xl font-medium ">
             <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-gray-800  cursor-pointer'>
@@ -56,9 +73,18 @@ const HamburgerMenu = ({closeMenu}) => {
                 FAQs
               </Link>
             </li>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
+              <Link
+                onClick={closeMenu}
+                to="/OpenRAG/AboutUs"
+                 className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
+              >
+                About Us
+              </Link>
+            </li>
           </ul>
-          <Link to="/OpenRAG/get-in-touch"  className='rounded md:hidden bg-gray-800 p-2 w-full   font-medium text-lg mb-10'>
-          <button onClick={closeMenu} className="rounded md:hidden bg-gray-800 w-full text-gray-300 hover:text-white font-medium text-lg ">
+          <Link to="/OpenRAG/get-in-touch"  className='rounded lg:hidden bg-gray-800 p-2 w-full   font-medium text-lg mb-10'>
+          <button onClick={closeMenu} className="rounded lg:hidden bg-gray-800 w-full text-gray-300 hover:text-white font-medium text-lg ">
             GET IN TOUCH
           </button>
           </Link>

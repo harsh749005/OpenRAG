@@ -74,7 +74,7 @@ const Products = () => {
               LangVault
             </Link>
             <Link
-              to="https://langvault-web-1.onrender.com/"
+              to="https://docdynamo.in/"
               target="_blank"
               className="button2Fade absolute left-[-110%] top-[75%] bg-white px-2 py-2 rounded-md text-[#10a37f] font-bold text-xl w-max h-max z-20 "
             >
@@ -111,7 +111,7 @@ const Products = () => {
                 </li>
               </ul>
               <Link
-                to="https://langvault-web-1.onrender.com/"
+                to="https://docdynamo.in/"
                 target="_blank"
                 className="buttonFade bg-white px-4 py-2 rounded-md text-[#10a37f] font-bold text-md w-max h-max z-20 "
               >

@@ -9,6 +9,8 @@ import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
 import ReadBlogs from "./pages/ReadBlogs";
 import HamburgerMenu from "./components/HamburgerMenu";
+import About from "./pages/About";
+import Footer from "./components/Footer";
 function App() {
   const [isMenuOpen,setMenuOpen] = useState(false);
   const [isAuth,setisAuth] = useState(false);
@@ -31,8 +33,9 @@ function App() {
           <Route path="/OpenRAG/products" element={<Products/>}/>
           <Route path="/OpenRAG/FAQ" element={<FAQs/>}/>
           <Route path="/OpenRAG/readblogs" element={<ReadBlogs/>}/>
+          <Route path="/OpenRAG/AboutUs" element={<About/>}/>
         </Routes>
-      
+     
     </div>
   )
 }
