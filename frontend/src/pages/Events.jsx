@@ -45,7 +45,7 @@ const Events = () => {
         {/* 1 */}
         <div
         
-          className={`cursor-pointer w-full h-[68px] md:h-12  flex flex-col items-center gap-2 relative  overflow-${
+          className={`cursor-pointer w-full h-[68px] md:h-12 ease-linear  flex flex-col items-center gap-2 relative  overflow-${
             selectedId === 1 ? "auto" : "hidden"
           } px-4`}
         >
@@ -81,9 +81,9 @@ const Events = () => {
             <ul className="list-disc flex flex-col gap-2 mt-2 relative">
               <li className="">
                 GenAl Expert Sessions: Participants gained insights from
-                <span className="founderName bg-emerald-300 cursor-pointer px-2 text-black font-bold">
+                <span className="founderName text-emerald-300 cursor-pointer px-2  font-bold">
                   Mr. Subham Ojha{" "}
-                  <div className="founderImg w-60 h-80 border-4 border-white rounded-xl">
+                  <div className="founderImg w-40 h-40 top-[-20%] left-56 xl:left-[50%] xl:top-[-80%] xl:w-60 xl:h-80  border-2 xl:border-4 border-white rounded-xl">
                     <img
                       src={founder1}
                       alt=""
@@ -96,9 +96,9 @@ const Events = () => {
               </li>
               <li>
                 1:1 Mentoring with another GenAl Expert{" "}
-                <span className="founderName bg-emerald-300 cursor-pointer px-2 text-black font-bold">
+                <span className="founderName text-emerald-300 cursor-pointer px-2 font-bold">
                   Mr.Etibar Aliyev{" "}
-                  <div className="founderImg2 w-60 h-80 border-4 border-white rounded-xl">
+                  <div className="founderImg2 w-40 h-40 top-[0%] left-32 xl:left-[-5%] xl:top-[-50%] xl:w-60 xl:h-80  border-2 xl:border-4 border-white rounded-xl">
                     <img
                       src={founder2}
                       alt=""
@@ -165,14 +165,14 @@ const Events = () => {
             <ul className="list-disc flex flex-col gap-2 mt-2">
               <p className="font-bold">
                 SPONSORS :{" "}
-                <span className="bg-emerald-300 text-black font-bold text-lg px-2 w-max ">
+                <span className="text-emerald-300  font-bold text-lg px-2 w-max ">
                   {" "}
                   DAMNSOCIAL
                 </span>
               </p>
               <li className="">
                 This generative AI and machine learning session drew over{" "}
-                <span className="bg-emerald-300 text-black font-bold text-lg px-2 w-max ">
+                <span className="text-emerald-300  font-bold text-lg px-2 w-max ">
                   {" "}
                   200 attendees
                 </span>
@@ -181,7 +181,7 @@ const Events = () => {
                 diving deep into the world and maths behind the Large Language
                 Models , empowering attendees to take their first steps into AI.
                 Session conducted by the{" "}
-                <span className="cofounderName bg-emerald-300 text-black font-bold text-lg px-2 w-max ">
+                <span className="cofounderName text-emerald-300 font-bold text-lg px-2 w-max ">
                   CO-FOUNDER
                   <div className="cofounderImg1 w-60 h-80 border-4 border-white rounded-xl">
                     <img
@@ -192,7 +192,7 @@ const Events = () => {
                   </div>
                 </span>
                 and
-                <span className="cofounderName bg-emerald-300 text-black font-bold text-lg px-2 w-max ">
+                <span className="cofounderName text-emerald-300  font-bold text-lg px-2 w-max ">
                   FOUNDER
                   <div className="cofounderImg2 w-60 h-80 border-4 border-white rounded-xl">
                     <img
@@ -214,7 +214,7 @@ const Events = () => {
                 ? "0px"
                 : BottomPosition + "px",
           }}
-          className={`cursor-pointer w-full h-[68px] md:h-12  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+          className={`cursor-pointer w-full h-[100%] md:h-[100%]  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
             selectedId === 3 ? "auto" : "hidden"
           } px-4`}
         >

@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 const About = () => {
   const containerRef = useRef(null);
   return (
-    <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
+    <div className="w-full h-[300vh] md:h-max bg-black pt-36">
       <div className="w-[90%] h-full bg-black pb-12 m-auto flex flex-col gap-2">
         <div
           ref={containerRef}

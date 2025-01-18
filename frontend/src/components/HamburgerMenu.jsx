@@ -22,7 +22,7 @@ const HamburgerMenu = ({closeMenu}) => {
   return (
     <div style={{
       top: `${scrollPosition + 320}px`, // Adjust positioning based on scroll position
-    }} className='z-50 absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 bg-black  w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-gray-700 '>
+    }} className='z-[11111] absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 bg-black  w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-gray-700 '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
     <IoCloseOutline onClick={closeMenu} className='text-2xl' />
         <img  src="" alt="" className='cursor-pointer'/>

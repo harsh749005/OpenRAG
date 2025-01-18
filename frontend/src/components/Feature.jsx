@@ -20,7 +20,7 @@ const Feature = () => {
             className="cursor-pointer rounded-md "
             spotlightColor="rgba(255, 255, 255, 0.25)"
           >
-            <div class="text-white text-4xl md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
+            <div class="text-white text-4xl md:text-xl lg:text-4xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
               <CountUp
                 from={0}
                 to={5}
@@ -40,7 +40,7 @@ const Feature = () => {
             className="cursor-pointer rounded-md"
             spotlightColor="rgba(255, 255, 255, 0.25)"
           >
-            <div class="text-white text-4xl md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
+            <div class="text-white text-4xl md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
               <CountUp
                 from={0}
                 to={1000}
@@ -60,7 +60,7 @@ const Feature = () => {
             className="cursor-pointer rounded-md "
             spotlightColor="rgba(255, 255, 255, 0.25)"
           >
-            <div class=" pr-4  text-white text-4xl md:text-xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
+            <div class=" pr-4  text-white text-4xl md:text-xl lg:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-[#AD49BD]">
               <h1>Global</h1>
             <div class="text-lg  lg:text-lg text-white font-semibold mt-2">Presence</div>
             </div>

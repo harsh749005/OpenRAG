@@ -41,7 +41,7 @@ const Section = () => {
   }, []);
 
   return (
-    <div className="container w-[100%] h-[320vh] md:h-[180vh]  relative ">
+    <div className="container w-[100%] h-[370vh] md:h-[250vh] lg:h-[250vh]  relative ">
       <Squares
         className="container"
         speed={0.5}
@@ -52,7 +52,7 @@ const Section = () => {
       />
       <div className="  w-full h-[100vh]  absolute top-[0px] pt-[300px]  md:mb-0">
         <div className=" box content w-full text-center flex flex-col gap-5 mb-28">
-          <h1 className=" text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">
+          <h1 className=" text-4xl md:text-6xl xl:text-8xl font-bold text-white mb-6">
             <span className=" block text-[#AD49BD] "> Revolutionizing</span>
             the Generative AI 
           </h1>

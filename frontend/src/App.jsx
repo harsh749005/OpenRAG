@@ -25,15 +25,15 @@ function App() {
         {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
         <Routes>
           {/* Home Route */}
-          <Route path="/OpenRAG"element={<Home/>}/>
+          <Route path="/"element={<Home/>}/>
           {/* Get in Touch Route */}
-          <Route path="/OpenRAG/get-in-touch" element={<GetinTouch />} />
-          <Route path="/OpenRAG/events" element={<Events/>}/>
-          <Route path="/OpenRAG/blogs" element={<Blogs/>}/>
-          <Route path="/OpenRAG/products" element={<Products/>}/>
-          <Route path="/OpenRAG/FAQ" element={<FAQs/>}/>
-          <Route path="/OpenRAG/readblogs" element={<ReadBlogs/>}/>
-          <Route path="/OpenRAG/AboutUs" element={<About/>}/>
+          <Route path="/get-in-touch" element={<GetinTouch />} />
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/blogs" element={<Blogs/>}/>
+          <Route path="/products" element={<Products/>}/>
+          <Route path="/FAQ" element={<FAQs/>}/>
+          <Route path="/readblogs" element={<ReadBlogs/>}/>
+          <Route path="/AboutUs" element={<About/>}/>
         </Routes>
      
     </div>

@@ -2,19 +2,18 @@
     display: none;
     z-index: 1111;
     position: absolute;
-    top: -80%;
-    left: 50%;
+    
+    
     /* rotate: -20deg; */
-    animation:animate 2s linear infinite;
+    /* animation:animate 2s linear infinite; */
 }
 .founderImg2,.cofounderImg2{
     display: none;
     z-index: 1111;
     position: absolute;
-    top: -50%;
-    left: -5%;
+
     /* rotate: -10deg; */
-    animation:animate 2s linear infinite;
+    /* animation:animate 2s linear infinite; */
     transition: all ;
 
 }

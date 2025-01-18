@@ -33,20 +33,20 @@ const Founders = () => {
           >
             Book Now
           </GradientText> */}
-          <button className="b-white px-5 mt-7 py-2 font-extrabold text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
+          <button className=" px-5 mt-7 py-2 font-extrabold text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
           Book Now
       </button>
           {/* <button className="text-black font-bold mt-7 px-10 py-3 bg-white rounded-full"></button> */}
         </div>
         <div className=" flex-1 h-max relative p-12 lg:flex hidden">
-          <div className="w-64 h-64 absolute top-52 bg-white p-2 rounded-xl cursor-pointer filter grayscale hover:grayscale-0 transition-all duration-300">
+          <div className="lg:w-48 lg:h-48 xl:w-64 xl:h-64 absolute xl:top-52 bg-white p-2 rounded-xl cursor-pointer filter grayscale hover:grayscale-0 transition-all duration-300">
             <img
               className="w-full h-full object-cover rounded-xl"
               src={image1}
               alt=""
             />
           </div>
-          <div className="w-64 h-64 absolute left-72 top-96 bg-white p-2 rounded-xl cursor-pointer filter grayscale hover:grayscale-0 transition-all duration-300">
+          <div className="lg:w-48 lg:h-48 xl:w-64 xl:h-64 absolute lg:left-24 xl:left-72 xl:top-96 bg-white p-2 rounded-xl cursor-pointer filter grayscale hover:grayscale-0 transition-all duration-300">
             <img
               className="w-full h-full object-cover rounded-xl"
               src={image2}

@@ -6,7 +6,7 @@ import Logo from "../assets/svg/logo";
 import { Link } from "react-router-dom";
 const Navbar = ({toggleMenu}) => {
   const scrollToTop = () => {
-    window.reload();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <>

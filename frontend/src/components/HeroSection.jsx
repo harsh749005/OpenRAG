@@ -1,6 +1,7 @@
 import React from "react";
 
 import glow from "../assets/glow.avif";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8 pt-20 pb-16 relative z-10">
             <div className="text-center flex flex-col gap-5">
-              <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mb-6">
+              <h1 className="text-4xl md:text-6xl xl:text-8xl font-bold text-white mb-6">
                 <span className="block text-[#AD49BD]"> Domain-Specifice</span>
                 Generative AI for the Future
               </h1>
@@ -23,12 +24,12 @@ const HeroSection = () => {
                 real-world problems across various sectors.
               </p>
               <div className="flex justify-center gap-4">
-                <button className="px-4 py-1  md:px-8 md:py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <Link to='/get-in-touch' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Get Started
-                </button>
-                <button className="px-4 py-1  md:px-8 md:py-3 bg-transparent text-white rounded-lg font-semibold border border-white hover:bg-white/10 transition-colors">
+                </Link>
+                <Link to='/products' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-transparent text-white rounded-lg font-semibold border border-white hover:bg-white/10 transition-colors">
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
