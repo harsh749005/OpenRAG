@@ -27,49 +27,49 @@ const Navbar = ({toggleMenu}) => {
             <div className="hidden lg:flex items-center space-x-8">
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG"
+                to="/"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Home
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/events"
+                to="/events"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Events
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/blogs"
+                to="/blogs"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Blog
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/products"
+                to="/products"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Products
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/FAQ"
+                to="/FAQ"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 FAQs
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/AboutUs"
+                to="/AboutUs"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 AboutUs
               </Link>
             </div>
           
-            <Link to='/OpenRAG/get-in-touch' className="hidden lg:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
+            <Link to='/get-in-touch' className="hidden lg:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
 
             <ShinyText
               text="GET IN TOUCH"

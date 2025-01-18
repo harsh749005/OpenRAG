@@ -31,7 +31,7 @@ const HamburgerMenu = ({closeMenu}) => {
             <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}              
-                to="/OpenRAG"
+                to="/"
                 className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 Home
@@ -40,7 +40,7 @@ const HamburgerMenu = ({closeMenu}) => {
             <li  className='w-full hamburgerMenuLi rounded p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}                
-                to="/OpenRAG/events"
+                to="/events"
                  className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 Events
@@ -49,7 +49,7 @@ const HamburgerMenu = ({closeMenu}) => {
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}
-                to="/OpenRAG/blogs"
+                to="/blogs"
                  className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 Blogs
@@ -58,7 +58,7 @@ const HamburgerMenu = ({closeMenu}) => {
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}
-                to="/OpenRAG/products"
+                to="/products"
                  className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 Products
@@ -67,7 +67,7 @@ const HamburgerMenu = ({closeMenu}) => {
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}
-                to="/OpenRAG/FAQ"
+                to="/FAQ"
                  className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 FAQs
@@ -76,14 +76,14 @@ const HamburgerMenu = ({closeMenu}) => {
             <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
               <Link
                 onClick={closeMenu}
-                to="/OpenRAG/AboutUs"
+                to="/AboutUs"
                  className="hamburgerMenua cursor-pointer text-gray-300 hover:text-white"
               >
                 About Us
               </Link>
             </li>
           </ul>
-          <Link to="/OpenRAG/get-in-touch"  className='rounded lg:hidden bg-gray-800 p-2 w-full   font-medium text-lg mb-10'>
+          <Link to="/get-in-touch"  className='rounded lg:hidden bg-gray-800 p-2 w-full   font-medium text-lg mb-10'>
           <button onClick={closeMenu} className="rounded lg:hidden bg-gray-800 w-full text-gray-300 hover:text-white font-medium text-lg ">
             GET IN TOUCH
           </button>

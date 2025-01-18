@@ -44,16 +44,20 @@ const GetinTouch = () => {
     }
     // Send form data to your server here
     axios.defaults.withCredentials = true;
-    axios.post(backendBaseUrl, values)
+    axios.post(`${backendBaseUrl}/create`, values)
      .then((response) => {
-        console.log(response);
+        
         setName('');
         setEmail('');
         setSelectedOption('');
         setDescription('');
         showToast("Thank you for your message! We'll get back to you soon.");
       })
-    console.log("Form submitted:", {name, email,selectedOption});
+      .catch((error)=>{
+        
+        showToast("Failed to send message. Please try again.");
+      })
+    
   }
   return (
     <div
