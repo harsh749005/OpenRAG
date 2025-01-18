@@ -5,13 +5,13 @@ import userModel from './models/userModel.js';
 
 // app config
 const app = express();
-const port = 8081;
+
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 app.use( cors({
-    origin: "http://localhost:5173",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
     methods: ["GET", "POST","DELETE"],
   }));
@@ -34,6 +34,6 @@ app.get('/', (req, res) => {
 });
 
 // starting the server
-app.listen(port, () => {  // no need for req and res here
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(process.env.PORT, () => {  // no need for req and res here
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
 });
