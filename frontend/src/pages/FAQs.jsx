@@ -163,7 +163,7 @@ const FAQs = () => {
                 <ul className="list-disc flex flex-col gap-2 mt-2">
                   <li className="">
                   The person who wants to join  OpenRAG, needs to be passionate to work dedicated to the given timelines and should be good at generativeAI. If all the qualities mentioned above matches to you, kindly mail our founder Nisharg Nargund your CV and your itnroduction along with a e-mail subject, "Aiming to Join OpenRAG".<br/>
-                  <p className="flex items-center mt-4">Email I'd:<p className="w-max text-black font-bold ml-1 bg-emerald-300 px-2 cursor-pointer"> nisarg.nargund@gmail.com</p></p>
+                  <p className="flex items-center mt-4">Email I'd:<p className="w-max font-bold ml-1 text-emerald-300 px-2 cursor-pointer"> nisarg.nargund@gmail.com</p></p>
                   </li>
                 </ul>
               </div>
