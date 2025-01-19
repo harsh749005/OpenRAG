@@ -21,7 +21,7 @@ const FAQs = () => {
       }, [selectedId]);
 
       const openGmail = () => {
-        const recipient = 'patelharsh90541@gmail.com';
+        const recipient = 'nisarg.nargund@gmail.com';
         const subject = 'Inquiry';
         const body = 'Hi there, I would like to ask about...';
     
