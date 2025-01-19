@@ -15,19 +15,19 @@ const Footer = () => {
     <div className="w-[90%] m-auto pt-20 lg:pt-56 ">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="w-8 h-8 lg:w-12 lg:h-12 p-2 border-[1px] md:border-2 border-white rounded-lg cursor-pointer hover:scale-150 transition-all duration-500">
+          <Link to='https://www.linkedin.com/company/openrag1/' target="_blank" className="w-8 h-8 lg:w-12 lg:h-12 p-2 border-[1px] md:border-2 border-white rounded-lg cursor-pointer hover:scale-150 transition-all duration-500">
             <img className="w-full h-full object-cover" src={linkedin} alt="" />
-          </div>
-          <div className="w-8 h-8 lg:w-12 lg:h-12 p-2 border-[1px] md:border-2 border-white rounded-lg cursor-pointer hover:scale-150 transition-all duration-500">
+          </Link>
+          <Link to='https://medium.com/@nisarg.nargund' target="_blank" className="w-8 h-8 lg:w-12 lg:h-12 p-2 border-[1px] md:border-2 border-white rounded-lg cursor-pointer hover:scale-150 transition-all duration-500">
             <img className="w-full h-full object-cover" src={medium} alt="" />
-          </div>
-          <div className="w-8 h-8 lg:w-12 lg:h-12  border-[1px] md:border-2 border-white rounded-lg bg-white cursor-pointer hover:scale-150 transition-all duration-500">
+          </Link>
+          <Link to='https://www.instagram.com/open.rag?igsh=MXAxNHZ2d2YzbGo3bg==' target="_blank" className="w-8 h-8 lg:w-12 lg:h-12  border-[1px] md:border-2 border-white rounded-lg bg-white cursor-pointer hover:scale-150 transition-all duration-500">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={instagram}
               alt=""
             />
-          </div>
+          </Link>
         </div>
         <BiArrowToTop className="text-4xl border-2 rounded-full p-1 cursor-pointer" onClick={scrollToTop}/> 
         <Link
