@@ -22,7 +22,7 @@ const Section = () => {
           start: "top 15%", // Start when the top of the box hits 85% of the viewport
           end: "bottom 15%", // End when the bottom of the box hits 15% of the viewport
           scrub: 1, // Smooth animation linked to scroll
-          markers: true, // Debugging markers to show start and end points
+          // Debugging markers to show start and end points
         },
       });
       // gsap.to(".card", {

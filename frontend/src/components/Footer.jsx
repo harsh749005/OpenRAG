@@ -5,11 +5,11 @@ import medium from "../assets/images/medium.jpg";
 import instagram from "../assets/images/instagram.png";
 import "./styles/Footer.css";
 import { Link } from "react-router-dom";
-
+import { BiArrowToTop } from "react-icons/bi";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.reload();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <div className="w-[90%] m-auto pt-20 lg:pt-56 ">
@@ -29,8 +29,9 @@ const Footer = () => {
             />
           </div>
         </div>
+        <BiArrowToTop className="text-4xl border-2 rounded-full p-1 cursor-pointer" onClick={scrollToTop}/> 
         <Link
-        onClick={scrollToTop}
+        
           to="/OpenRAG/get-in-touch"
           className=" text-sm px-3 py-2 lg:px-5 lg:py-2 font-extrabold lg:text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500"
         >
