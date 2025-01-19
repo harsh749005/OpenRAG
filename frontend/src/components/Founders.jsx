@@ -3,7 +3,12 @@ import SpotlightCard from "../components/reactBits/SpotlightCard";
 import image1 from "../assets/images/image1.png";
 import image2 from "../assets/images/image2.jpg";
 import GradientText from "../components/reactBits/GradientText";
+import { useNavigate } from 'react-router-dom';
 const Founders = () => {
+  const navigate = useNavigate();
+  const goToPage = () => {
+    window.open(' https://topmate.io/nisharg_nargund'); // This will redirect to the "/about" page
+  };
   return (
     <div className="w-[90%] h-max pb-2 md:w-[80%] lg:h-[120vh] m-auto">
       <SpotlightCard
@@ -33,7 +38,7 @@ const Founders = () => {
           >
             Book Now
           </GradientText> */}
-          <button className=" px-5 mt-7 py-2 font-extrabold text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
+          <button onClick={goToPage} className=" px-5 mt-7 py-2 font-extrabold text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
           Book Now
       </button>
           {/* <button className="text-black font-bold mt-7 px-10 py-3 bg-white rounded-full"></button> */}
