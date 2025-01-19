@@ -19,6 +19,16 @@ const FAQs = () => {
         console.log(BottomPosition);
         console.log(selectedId);
       }, [selectedId]);
+
+      const openGmail = () => {
+        const recipient = 'patelharsh90541@gmail.com';
+        const subject = 'Inquiry';
+        const body = 'Hi there, I would like to ask about...';
+    
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        window.open(gmailUrl, '_blank'); // Opens Gmail in a new tab
+      }
   return (
     <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
           <div className="w-[90%] pl-2 pr-2 h-full bg-black m-auto flex flex-col gap-2">
@@ -163,7 +173,7 @@ const FAQs = () => {
                 <ul className="list-disc flex flex-col gap-2 mt-2">
                   <li className="">
                   The person who wants to join  OpenRAG, needs to be passionate to work dedicated to the given timelines and should be good at generativeAI. If all the qualities mentioned above matches to you, kindly mail our founder Nisharg Nargund your CV and your itnroduction along with a e-mail subject, "Aiming to Join OpenRAG".<br/>
-                  <p className="flex items-center mt-4">Email I'd:<p className="w-max font-bold ml-1 text-emerald-300 px-2 cursor-pointer"> nisarg.nargund@gmail.com</p></p>
+                  <p className="flex items-center mt-4">Email I'd:<p onClick={openGmail} className="w-max font-bold ml-1 text-emerald-300 px-2 cursor-pointer"> nisarg.nargund@gmail.com</p></p>
                   </li>
                 </ul>
               </div>
