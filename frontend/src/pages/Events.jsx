@@ -6,6 +6,7 @@ import founder1 from "../assets/images/founderMeet1.png";
 import founder2 from "../assets/images/founderMeet2.png";
 import founder from "../assets/images/image1.png";
 import cofounder from "../assets/images/image2.jpg";
+import { Link } from "react-router-dom";
 const Events = () => {
   const containerRef = useRef(null);
   const [selectedId, setSelectedId] = useState(null);
@@ -54,7 +55,7 @@ const Events = () => {
             className=" absolute z-10 w-full  top-0 bg-black flex items-center justify-between"
           >
             <h1 className="text-lg  md:text-2xl lg:text-4xl text-white">
-              1. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
+              1. AI FOR INDIA x<Link to='https://www.instagram.com/axamine.ai?igsh=eWRtZzJhZmg1cnE2' target="_blank" className="cursor-pointer text-emerald-300"> Axamine</Link> : A pan India generativeAI Hackathon{" "}
             </h1>
             <div
               style={{ rotate: selectedId === 1 ? "45deg" : "0deg" }}
