@@ -29,15 +29,12 @@ const Products = () => {
           <div className="leftContent w-full md:w-96 h-full  flex-1">
             {/* md and its above screen view */}
             <h1 className="hidden md:block text-white font-bold text-2xl font-sans">
-              The LLM Playground
+            Langvault: 
             </h1>
             <p className="hidden md:block text-white text-lg pt-5 ">
               <ul className=" list-disc text-gray-300 px-6">
                 <li className="font-sans">
-                  LLM playground is a simulation of all the AI models currently
-                  trending in the world . where you can compare two AI models by
-                  giving them coding questions or any expert question and let
-                  the LLM show how capable it is.
+                Transform your PDFs and resumes effortlessly between national and international languages with just two clicks! OpenRAG's LangVault ensures your documents are instantly accessible in your preferred local language, breaking language barriers in seconds. Whether you're preparing for a global opportunity or simplifying communication, LangVault's lightning-fast, accurate translations make your documents ready to read, share, and impress—anywhere, anytime.
                 </li>
               </ul>
             </p>
