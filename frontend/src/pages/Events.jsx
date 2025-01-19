@@ -214,7 +214,7 @@ const Events = () => {
                 ? "0px"
                 : BottomPosition + "px",
           }}
-          className={`cursor-pointer w-full h-[100%] md:h-[100%]  ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
+          className={`cursor-pointer w-full h-[68px] md:h-20 ease-linear  flex flex-col items-center gap-2 relative  transition-all duration-700   overflow-${
             selectedId === 3 ? "auto" : "hidden"
           } px-4`}
         >
