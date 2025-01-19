@@ -2,12 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://harsh749005.github.io/OpenRAG",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
-
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",

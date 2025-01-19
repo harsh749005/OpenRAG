@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 import { IoEyeOutline } from "react-icons/io5";
 import { BiCommentDetail } from "react-icons/bi";
@@ -12,12 +12,35 @@ import { FaLink } from "react-icons/fa";
 import SpotlightCard from "../components/reactBits/SpotlightCard";
 import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Bounce } from 'react-toastify'; 
+
 const ReadBlogs = () => {
   const containerRef = useRef(null);
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!clicked);
   };
+  const [currentURL,setcurrentURL] =useState('');
+  const handleCopy = () => {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+    showToast('Link copied')
+  };
+   const showToast = (message) => {
+        toast.success(message, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
+      };
   return (
     <div className="w-full  bg-black pt-36">
       <div className="w-[90%] h-full bg-black pb-12 m-auto flex flex-col gap-2">
@@ -32,7 +55,7 @@ const ReadBlogs = () => {
                   Sep 28, 2024 • 2 min read
                 </p>
 
-                <IoMdShare className="text-gray-300 cursor-pointer" />
+                <IoMdShare onClick={handleCopy} className="text-gray-300 cursor-pointer" />
               </div>
               <div className="flex flex-col gap-5">
                 <h1 className="text-white font-medium font-sans text-lg md:text-4xl">
@@ -96,13 +119,14 @@ const ReadBlogs = () => {
         <div className="w-full bg-black pt-10 ">
                   <div className="flex items-center justify-between">
                     <h1 className="text-gray-300 text-lg">Recent Posts</h1>
-                    <Link className="text-gray-300 hover:text-white cursor-pointer" to='/blogs'>see more</Link>
+                    <Link className="text-gray-300 hover:text-white cursor-pointer" to='/OpenRAG/blogs'>see more</Link>
                   </div>
         <div className="w-full h-full bg-black flex items-center gap-4 flex-wrap pt-10">
                   <BlogCard/>
         </div>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

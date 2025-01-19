@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         <Link
         onClick={scrollToTop}
-          to="/get-in-touch"
+          to="/OpenRAG/get-in-touch"
           className=" text-sm px-3 py-2 lg:px-5 lg:py-2 font-extrabold lg:text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500"
         >
           GET IN TOUCH

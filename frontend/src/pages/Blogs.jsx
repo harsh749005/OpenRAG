@@ -5,7 +5,7 @@ import VariableProximity from "../components/reactBits/VariableProximity";
 import BlogCard from "../components/BlogCard";
 const Blogs = () => {
   const containerRef = useRef(null);
-
+  
   return (
     <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
         
@@ -28,9 +28,9 @@ const Blogs = () => {
           />
         </div>
         <div className=" w-max h-max flex flex-col items-center gap-5 md:w-full md:flex-row md:flex md:items-center md:gap-5 md:flex-wrap">
-       <BlogCard/>
-       <BlogCard/>
-       <BlogCard/>
+      
+        <BlogCard  />
+      
         </div>
       </div>
     </div>
