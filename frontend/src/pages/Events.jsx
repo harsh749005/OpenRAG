@@ -160,7 +160,7 @@ const Events = () => {
             className='w-full absolute transition-all duration-700  ease-linear  text-white '
           >
             <p className="text-xl text-gray-100 ">
-              Events Date: 3rd July 2024 - 7th July 2024
+              {/* Events Date: 3rd July 2024 - 7th July 2024 */}
             </p>
             <ul className="list-disc flex flex-col gap-2 mt-2">
               <p className="font-bold">
@@ -241,7 +241,7 @@ const Events = () => {
             className=' w-full absolute transition-all duration-700  ease-linear text-white '
           >
             <p className="text-xl text-gray-100 ">
-              Events Date: 3rd July 2024 - 7th July 2024
+              {/* Events Date: 3rd July 2024 - 7th July 2024 */}
             </p>
             <ul className="list-disc flex flex-col gap-2 mt-2">
               <li className="">
