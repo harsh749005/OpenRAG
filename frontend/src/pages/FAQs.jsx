@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import VariableProximity from "../components/reactBits/VariableProximity";
 import { IoMdAdd } from "react-icons/io";
 import "./styles/Events.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Bounce } from 'react-toastify'; 
 
 const FAQs = () => {
       const containerRef = useRef(null);
@@ -24,11 +27,31 @@ const FAQs = () => {
         const recipient = 'nisarg.nargund@gmail.com';
         const subject = 'Inquiry';
         const body = 'Hi there, I would like to ask about...';
-    
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        window.open(gmailUrl, '_blank'); // Opens Gmail in a new tab
+        navigator.clipboard.writeText('nisarg.nargund@gmail.com');
+        showToast('Mail ID Copied')
+        // const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const gmailUrl = 'https://mail.google.com/mail/u/0/#inbox?compose=new'
+        setInterval(
+          () => {
+            window.open(gmailUrl, '_blank')
+          },
+          1000 // 1 minute
+        )
+        ; // Opens Gmail in a new tab
       }
+        const showToast = (message) => {
+            toast.success(message, {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+            });
+          };
   return (
     <div className="w-full h-[300vh] md:h-[200vh] bg-black pt-36">
           <div className="w-[90%] pl-2 pr-2 h-full bg-black m-auto flex flex-col gap-2">
@@ -179,6 +202,7 @@ const FAQs = () => {
               </div>
             </div>
           </div>
+           <ToastContainer/>
         </div>
   )
 }
