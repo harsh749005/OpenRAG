@@ -41,7 +41,7 @@ const Section = () => {
   }, []);
 
   return (
-    <div className="container w-[100%] h-[370vh] md:h-[250vh] lg:h-[250vh]  relative ">
+    <div className="container w-[100%] h-[370vh] md:h-[250vh] lg:h-[280vh]   relative m-auto ">
       <Squares
         className="container"
         speed={0.5}

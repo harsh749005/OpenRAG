@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
-      <div className="relative h-max pb-10 md:overflow-hidden pt-5 md:pt-16 md:h-screen">
+      <div className="relative h-max pb-10 md:overflow-hidden pt-5 md:pt-16 md:h-max">
           <div className="absolute inset-0 md:w-full md:h-full overflow-hidden md:rotate-0 w-72 h-72 m-auto top-[120px]">
             <img src={glow} className="absolute md:top-[120px] w-[90%] h-[90%]" alt="" />
             <div className="absolute  inset-0 bg-gradient-to-t from-black via-black/50 md:w-full md:h-full w-[90%] h-[90%] to-transparent " />
