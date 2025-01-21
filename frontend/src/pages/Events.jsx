@@ -224,7 +224,7 @@ const Events = () => {
             className="z-20 absolute w-full top-0 bg-black flex items-center justify-between"
           >
             <h1 className="text-lg text-white md:text-2xl lg:text-4xl">
-              3. AI FOR INDIA: A pan India generativeAI Hackathon{" "}
+              3. Prompt Engg. Cohort with FED, KIIT{" "}
             </h1>
             <div
               style={{ rotate: selectedId === 3 ? "45deg" : "0deg" }}

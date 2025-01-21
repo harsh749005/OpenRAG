@@ -97,34 +97,12 @@ const About = () => {
               <p className="font-sans">
                 OpenRAG addresses these challenges by developing RAGbots—{" "}
                 <span className="text-emerald-300 font-bold px-2">
-                  domain-specific
+                  industry-specific
                 </span>{" "}
                 Retrieval-Augmented Generation chatbots—and generative AI agents
                 and tools.
               </p>
-              <p className="font-sans">
-                Our Beta MVPs,
-                <Link
-                  to="https://docdynamo.in/"
-                  target="_blank"
-                  className="text-emerald-300 font-bold px-2"
-                >
-                  DocDynamo
-                </Link>{" "}
-                and{" "}
-                <Link
-                  to="https://langvault-web-1.onrender.com/"
-                  target="_blank"
-                  className="text-emerald-300 font-bold px-2"
-                >
-                  LLM Playground
-                </Link>
-                , are designed to provide education and research domain with AI
-                solutions that cater specifically to their operational and
-                informational needs, empowering them with robust, streamlined
-                tools that enhance user engagement, content creation, and data
-                insights.{" "}
-              </p>
+              
             </p>
           </SpotlightCard>
         </div>
