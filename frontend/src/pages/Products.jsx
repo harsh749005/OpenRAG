@@ -86,10 +86,7 @@ const Products = () => {
             <p className="hidden md:block text-white text-lg pt-5 ">
               <ul className=" list-disc text-gray-300 px-6">
                 <li className="font-sans">
-                  LLM playground is a simulation of all the AI models currently
-                  trending in the world . where you can compare two AI models by
-                  giving them coding questions or any expert question and let
-                  the LLM show how capable it is.
+                OpenRAG offers tailored AI applications and DOCDYNAMO is one of it which offers you time and space where you can just upload your multiple PDFs(Upto 5) for free and ask the questions to our chatbot and it will respond you as early as possible. Also, get a personalised youtube recommendations according to the query you asked.
                 </li>
               </ul>
             </p>
