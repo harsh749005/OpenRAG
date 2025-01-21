@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8 pt-20 pb-16 relative z-10">
             <div className="text-center flex flex-col gap-5">
               <h1 className="text-4xl md:text-6xl xl:text-8xl font-bold text-white mb-6">
-                <span className="block text-[#AD49BD]"> Domain-Specific</span>
+                <span className="block text-[#AD49BD]"> Industry-specialized</span>
                 Generative AI for the Future
               </h1>
               <p className="sm:text-[12px] md:text-xl font-sans text-gray-400 max-w-2xl mx-auto mb-8">
