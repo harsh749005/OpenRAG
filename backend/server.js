@@ -5,21 +5,27 @@ import userModel from "./models/userModel.js";
 import "dotenv/config";
 import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
+// Enable CORS
+app.use(
+    cors({
+      origin: process.env.FRONTEND_URL,    // Replace with your frontend URL
+      credentials: true,                   // Allow credentials (cookies)
+      methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],  // Allowed HTTP methods
+      allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+    })
+  );
+  
+  // Handle preflight requests explicitly
+  app.options('*', cors());  // This allows preflight requests for all routes
+  
+
 // app config
 const app = express();
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true,
-    methods: ["GET", "POST", "DELETE"],
-    allowedHeaders: ['Content-Type', 'Authorization'], 
-  })
-);
-app.options('*', cors());
+
 // db connection
 connectDB();
 
