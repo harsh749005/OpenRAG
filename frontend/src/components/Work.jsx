@@ -23,7 +23,7 @@ const Work = () => {
             advanced GenAI solutions tailored to your specific needs.
           </p>
        
-          <Link to="/OpenRAG/get-in-touch" className="text-sm px-4 py-2 md:px-5 md:mt-7 md:py-2 font-extrabold md:text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
+          <Link to="/get-in-touch" className="text-sm px-4 py-2 md:px-5 md:mt-7 md:py-2 font-extrabold md:text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500">
           Get Started
       </Link>
         </div>
