@@ -24,10 +24,10 @@ const HeroSection = () => {
                 real-world problems across various sectors.
               </p>
               <div className="flex justify-center gap-4">
-                <Link to='/OpenRAG/get-in-touch' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                <Link to='/get-in-touch' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                   Get Started
                 </Link>
-                <Link to='/OpenRAG/products' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-transparent text-white rounded-lg font-semibold border border-white hover:bg-white/10 transition-colors">
+                <Link to='/products' target="_self" className="px-4 py-1  md:px-8 md:py-3 bg-transparent text-white rounded-lg font-semibold border border-white hover:bg-white/10 transition-colors">
                   Learn More
                 </Link>
               </div>
