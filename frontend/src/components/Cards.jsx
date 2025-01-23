@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SpotlightCard from "../components/reactBits/SpotlightCard";
 import GradientText from "../components/reactBits/GradientText";
-import Icon1 from "../assets/svg/icon1";
+import Icon1 from "../assets/svg/Icon1";
 import Carddata from "./Carddata"; // Renamed imported data to cardData
 
 const Cards = () => {
