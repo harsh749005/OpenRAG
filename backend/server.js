@@ -5,9 +5,15 @@ import userModel from "./models/userModel.js";
 import "dotenv/config";
 import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
+const app = express();
 // Enable CORS
 app.use(
-    cors()
+    cors({
+      origin: "https://open-rag-kfjh.vercel.app",    // Replace with your frontend URL
+      credentials: true,                   // Allow credentials (cookies)
+      methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],  // Allowed HTTP methods
+      allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
+    })
   );
   
   // Handle preflight requests explicitly
@@ -15,7 +21,6 @@ app.use(
   
 
 // app config
-const app = express();
 
 // middleware
 app.use(express.json());
