@@ -12,7 +12,7 @@ const GetinTouch = () => {
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
   const [selectedOption, setSelectedOption] = useState("");
-
+  axios.defaults.withCredentials = true;
   const handleOption = (e) => {
     const optionValue = e.target.value;
     setSelectedOption(prevOption => prevOption === optionValue  ? '' : optionValue );
