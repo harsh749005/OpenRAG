@@ -7,12 +7,7 @@ import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
 // Enable CORS
 app.use(
-    cors({
-      origin: "https://open-rag-kfjh.vercel.app",    // Replace with your frontend URL
-      credentials: true,                   // Allow credentials (cookies)
-      methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],  // Allowed HTTP methods
-      allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
-    })
+    cors()
   );
   
   // Handle preflight requests explicitly
