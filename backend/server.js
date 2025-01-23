@@ -23,40 +23,40 @@ app.options('*', cors());
 // db connection
 connectDB();
 
-app.post("/email", async (req, res) => {
-    console.log(process.env.API_KEY);
-  // Initialize MailerSend with your API key
-  const mailersend = new MailerSend({
-    apiKey:"mlsn.4b2709b233d65c21f783aac6d2597b01bd4795595c459b2dda478f4bb62d1edd", // Make sure your API key is correctly set
-  });
-  const sentFrom = new Sender("patelharsh90541@gmail.com", "harsh");
-  // Create a recipient object
-  const recipients = [new Recipient("patelharsh749005@gmail.com", "Recipient")];
+// app.post("/email", async (req, res) => {
+//     console.log(process.env.API_KEY);
+//   // Initialize MailerSend with your API key
+//   const mailersend = new MailerSend({
+//     apiKey:"mlsn.4b2709b233d65c21f783aac6d2597b01bd4795595c459b2dda478f4bb62d1edd", // Make sure your API key is correctly set
+//   });
+//   const sentFrom = new Sender("patelharsh90541@gmail.com", "harsh");
+//   // Create a recipient object
+//   const recipients = [new Recipient("patelharsh749005@gmail.com", "Recipient")];
 
-  // Set up the email parameters
-  const emailParams = new EmailParams()
-  .setFrom(sentFrom)
-  .setTo(recipients)
-  .setReplyTo(sentFrom)
-  .setSubject("This is a Subject")
-  .setHtml("<strong>This is the HTML content</strong>")
-  .setText("This is the text content");
+//   // Set up the email parameters
+//   const emailParams = new EmailParams()
+//   .setFrom(sentFrom)
+//   .setTo(recipients)
+//   .setReplyTo(sentFrom)
+//   .setSubject("This is a Subject")
+//   .setHtml("<strong>This is the HTML content</strong>")
+//   .setText("This is the text content");
 
-  try {
-    // Send the email and await the response
-    await mailersend.email.send(emailParams);
+//   try {
+//     // Send the email and await the response
+//     await mailersend.email.send(emailParams);
 
-    // Respond with a success message
-    res.status(200).json({ message: "Email sent successfully!" });
-    console.log("Email sent successfully");
-  } catch (error) {
-    // Handle any errors during the email sending process
-    console.error("Error sending email: ", error);
-    res
-      .status(500)
-      .json({ message: "Failed to send email.", error: error.message });
-  }
-});
+//     // Respond with a success message
+//     res.status(200).json({ message: "Email sent successfully!" });
+//     console.log("Email sent successfully");
+//   } catch (error) {
+//     // Handle any errors during the email sending process
+//     console.error("Error sending email: ", error);
+//     res
+//       .status(500)
+//       .json({ message: "Failed to send email.", error: error.message });
+//   }
+// });
 // routes
 app.post("/create", async (req, res) => {
   // , number, reached, description
