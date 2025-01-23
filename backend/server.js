@@ -9,7 +9,7 @@ import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 app.use(
     cors({
       origin: process.env.FRONTEND_URL,    // Replace with your frontend URL
-      credentials: true,                   // Allow credentials (cookies)
+                     // Allow credentials (cookies)
       methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],  // Allowed HTTP methods
       allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
     })
