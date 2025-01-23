@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import glow from "../assets/glow.avif";
 import ShinyText from "../components/reactBits/ShinyText";
-import Logo from "../assets/svg/logo";
+import Logo from "../assets/svg/Logo";
 import { Link } from "react-router-dom";
 const Navbar = ({toggleMenu}) => {
   const scrollToTop = () => {
