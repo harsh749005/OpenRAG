@@ -44,10 +44,10 @@ const GetinTouch = () => {
       description,
     }
     // Send form data to your server here
-    // axios.defaults.withCredentials = true;
+    axios.defaults.withCredentials = true;
     axios.post(`${backendBaseUrl}/create`, values,{
       headers: {
-        'Access-Control-Allow-Origin': backendBaseUrl,
+        'Access-Control-Allow-Origin': 'https://open-rag-flax.vercel.app',
         'Access-Control-Allow-Credentials': 'true',
       }
     })
