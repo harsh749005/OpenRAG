@@ -17,8 +17,8 @@ app.use(
     })
   );
   
-  // Handle preflight requests explicitly
-  app.options('*', cors());  // This allows preflight requests for all routes
+  // // Handle preflight requests explicitly
+  // app.options('*', cors());  // This allows preflight requests for all routes
   
 
 // app config
