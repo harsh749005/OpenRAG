@@ -44,7 +44,7 @@ const GetinTouch = () => {
       description,
     }
     // Send form data to your server here
-    axios.defaults.withCredentials = true;
+    // axios.defaults.withCredentials = true;
     axios.post(`${backendBaseUrl}/create`, values)
      .then((response) => {
         
