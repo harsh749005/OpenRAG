@@ -17,10 +17,10 @@ app.use(
     })
   );
   
-// Handle OPTIONS method for preflight request
-app.options('*', (req, res) => {
-  res.sendStatus(200); // Respond with HTTP OK status
-});
+  // Handle preflight requests explicitly
+  app.options('*', cors());  // This allows preflight requests for all routes
+  
+
 // app config
 
 // middleware
