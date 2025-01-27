@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'; 
 
 const GetinTouch = () => {
-  const backendBaseUrl = 'open-rag-flax.vercel.app';
+  const backendBaseUrl = 'https://open-rag-flax.vercel.app';
   // const backendBaseUrl = 'http://localhost:8081';
   const containerRef = useRef(null);
   const [name,setName] = useState('');
