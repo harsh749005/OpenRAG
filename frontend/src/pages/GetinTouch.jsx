@@ -7,7 +7,7 @@ import { Bounce } from 'react-toastify';
 
 const GetinTouch = () => {
   // const backendBaseUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
-  const backendBaseUrl = 'open-rag-flax.vercel.app';
+  const backendBaseUrl = 'http://localhost:8081';
   const containerRef = useRef(null);
   const [name,setName] = useState('');
   const [email, setEmail] = useState('');
@@ -45,7 +45,13 @@ const GetinTouch = () => {
     }
     // Send form data to your server here
     axios.defaults.withCredentials = true;
-    axios.post(`${backendBaseUrl}/create`, values)
+    axios.post(`${backendBaseUrl}/create`, values,{
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Credentials': 'true',
+      }
+    })
      .then((response) => {
         
         setName('');
