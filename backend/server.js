@@ -9,8 +9,8 @@ const app = express();
 // Enable CORS
 app.use(
     cors({
-      origin:"http://localhost:5173",
-      // origin: "https://open-rag-kfjh.vercel.app",    // Replace with your frontend URL
+      // origin:"http://localhost:5173",
+      origin: "https://open-rag-kfjh.vercel.app",    // Replace with your frontend URL
       credentials: true,                   // Allow credentials (cookies)
       methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],  // Allowed HTTP methods
       allowedHeaders: ['Content-Type', 'Authorization'],  // Allowed headers
