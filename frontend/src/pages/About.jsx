@@ -102,7 +102,6 @@ const About = () => {
                 Retrieval-Augmented Generation chatbots—and generative AI agents
                 and tools.
               </p>
-              
             </p>
           </SpotlightCard>
         </div>

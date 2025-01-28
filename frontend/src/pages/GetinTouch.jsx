@@ -6,13 +6,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'; 
 
 const GetinTouch = () => {
-  const backendBaseUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
+  const backendBaseUrl = 'https://open-rag-flax.vercel.app';
+  // const backendBaseUrl = 'http://localhost:8081';
   const containerRef = useRef(null);
   const [name,setName] = useState('');
   const [email, setEmail] = useState('');
   const [description, setDescription] = useState('');
   const [selectedOption, setSelectedOption] = useState("");
-
+  axios.defaults.withCredentials = true;
   const handleOption = (e) => {
     const optionValue = e.target.value;
     setSelectedOption(prevOption => prevOption === optionValue  ? '' : optionValue );
@@ -43,8 +44,13 @@ const GetinTouch = () => {
       description,
     }
     // Send form data to your server here
-    axios.defaults.withCredentials = true;
-    axios.post(`${backendBaseUrl}/create`, values)
+    axios.defaults.withCredentials = false;
+    axios.post(`${backendBaseUrl}/create`, values,{
+      headers: {
+        'Access-Control-Allow-Origin':backendBaseUrl
+      }  // Make sure your server accepts JSON data as well as form-data.
+     ,
+    })
      .then((response) => {
         
         setName('');

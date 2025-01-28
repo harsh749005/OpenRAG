@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../assets/svg/logo";
 import linkedin from "../assets/images/linkedin.png";
 import medium from "../assets/images/medium.jpg";
 import instagram from "../assets/images/instagram.png";
@@ -32,7 +31,7 @@ const Footer = () => {
         <BiArrowToTop className="text-4xl border-2 rounded-full p-1 cursor-pointer" onClick={scrollToTop}/> 
         <Link
         
-          to="/OpenRAG/get-in-touch"
+          to="/get-in-touch"
           className=" text-sm px-3 py-2 lg:px-5 lg:py-2 font-extrabold lg:text-xl rounded-full bg-[#F06292] text-white hover:text-black hover:bg-white transition-all duration-500"
         >
           GET IN TOUCH

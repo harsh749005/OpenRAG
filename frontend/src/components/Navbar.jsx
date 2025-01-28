@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import glow from "../assets/glow.avif";
 import ShinyText from "../components/reactBits/ShinyText";
-import Logo from "../assets/svg/logo";
+import Logo from "../assets/svg/Logo";
 import { Link } from "react-router-dom";
 const Navbar = ({toggleMenu}) => {
   const scrollToTop = () => {
@@ -28,49 +27,43 @@ const Navbar = ({toggleMenu}) => {
             <div className="hidden lg:flex items-center space-x-8">
               <Link
                
-                to="/OpenRAG"
+                to="/"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Home
               </Link>
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/events"
+                to="/events"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Events
               </Link>
+            
               <Link
               onClick={scrollToTop}
-                to="/OpenRAG/blogs"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Blog
-              </Link>
-              <Link
-              onClick={scrollToTop}
-                to="/OpenRAG/products"
+                to="/products"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Products
               </Link>
               <Link
              onClick={scrollToTop}
-                to="/OpenRAG/FAQ"
+                to="/FAQ"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 FAQs
               </Link>
               <Link
              onClick={scrollToTop}
-                to="/OpenRAG/AboutUs"
+                to="/AboutUs"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 AboutUs
               </Link>
             </div>
           
-            <Link to='/OpenRAG/get-in-touch' className="hidden lg:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
+            <Link to='/get-in-touch' className="hidden lg:block w-max h-max hover:bg-[#1F1E1E] rounded-lg transition-all duration-300">
 
             <ShinyText
               text="GET IN TOUCH"
