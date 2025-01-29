@@ -18,7 +18,12 @@ app.options('*', (req, res) => {
 
 // middleware
 app.use(express.json());
+<<<<<<< HEAD
+app.use(express.urlencoded({ extended:true }));
+app.use( cors());
+=======
 app.use(express.urlencoded({ extended: true }));
+>>>>>>> 7582c0091c9335fe5c6673fba4fa8ce58da869d4
 
 // db connection
 connectDB();
